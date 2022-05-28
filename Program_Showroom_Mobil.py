@@ -44,41 +44,45 @@ def on_click():
             showerror('Error', 'Set A Higher Price')
         elif 80000000 < number <= 300000000:
             hasil = Label(window, text= ((xenia.getModel())))
-            hasil.place(x=145,y=180)
+            hasil.place(x=115,y=180)
             hasil = Label(window, text= ((avanza.getModel())))
-            hasil.place(x=145,y=250)
+            hasil.place(x=115,y=250)
         elif 300000000 < number <= 500000000:
             hasil = Label(window, text= ((innova.getModel())))
-            hasil.place(x=145,y=180)
+            hasil.place(x=115,y=180)
             hasil = Label(window, text= ((crv.getModel())))
-            hasil.place(x=145,y=250)
+            hasil.place(x=115,y=250)
         elif 500000000 < number <= 800000000:
             hasil = Label(window, text= ((fortuner.getModel())))
-            hasil.place(x=145,y=180)
+            hasil.place(x=115,y=180)
             hasil = Label(window, text= ((pajero.getModel())))
-            hasil.place(x=145,y=250)
+            hasil.place(x=115,y=250)
         elif 800000000 < number <= 2000000000:
             hasil = Label(window, text= ((alphard.getModel())))
-            hasil.place(x=145,y=180)
+            hasil.place(x=115,y=180)
             hasil = Label(window, text= ((mercedescla.getModel())))
-            hasil.place(x=145,y=250)
+            hasil.place(x=105,y=250)
         else:
             showerror('Error', 'No Car Available')
 
-xenia = Lowprice("Daihatsu Xenia                   ")
-innova = Lowprice ("Toyota Innova                  ")
-fortuner = Lowprice ("Toyota Fortuner              ") 
-alphard = Lowprice ("Toyota Alphard                ")
+xenia = Lowprice("        Daihatsu Xenia       ")
+innova = Lowprice ("        Toyota Innova       ")
+fortuner = Lowprice ("        Toyota Fortuner       ") 
+alphard = Lowprice ("        Toyota Alphard       ")
  
-avanza = Highprice("Toyota Avanza                  ") 
-crv = Highprice("Honda CR-V                        ")
-pajero = Highprice ("Mitsubishi Pajero             ") 
-mercedescla = Highprice("Mercedes-Benz CLA         ") 
+avanza = Highprice("        Toyota Avanza       ") 
+crv = Highprice("        Honda CR-V       ")
+pajero = Highprice ("        Mitsubishi Pajero       ") 
+mercedescla = Highprice("        Mercedes-Benz CLA       ") 
 
 window = Tk()
 
 logo = PhotoImage(file="car.png")
 window.iconphoto(True,logo)
+
+bg = PhotoImage(file='carbg4.png')
+a_label = Label(window, image=bg)
+a_label.place(x=0, y=0, relheight=1, relwidth=1)
 
 window.geometry("370x320")
 window.title("Showroom GET-CAR")
@@ -106,7 +110,7 @@ labeljudul.pack(pady=20)
 labelText1 = Label(window, 
                     text = "  Price\t:",
                     font = ("times new roman", 12))
-labelText1.place(x=60,y=65)   
+labelText1.place(x=45,y=65)   
 
 labelText2 = Label(window, 
                     text = "Car 1  :",
